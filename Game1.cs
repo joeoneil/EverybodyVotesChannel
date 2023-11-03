@@ -341,16 +341,16 @@ namespace EverybodyVotesChannel
 			if (Input.GetButtonDown(2, Input.ArcadeButtons.Menu) || k.IsKeyDown(Keys.H)) {
 				_votes["Player 2 Menu"]++;
 			}
-                        if (Input.GetButtonDown(2, Input.ArcadeButtons.StickUp) && !Input.GetButtonDown(1, Input.ArcadeButtons.StickLeft) && !Input.GetButtonDown(1, Input.ArcadeButtons.StickRight)) {
+                        if (Input.GetButtonDown(2, Input.ArcadeButtons.StickUp) && !Input.GetButtonDown(2, Input.ArcadeButtons.StickLeft) && !Input.GetButtonDown(2, Input.ArcadeButtons.StickRight)) {
                                 _votes["Player 2 StickUp"]++;
                         }
-                        if (Input.GetButtonDown(2, Input.ArcadeButtons.StickDown) && !Input.GetButtonDown(1, Input.ArcadeButtons.StickLeft) && !Input.GetButtonDown(1, Input.ArcadeButtons.StickRight)) {
+                        if (Input.GetButtonDown(2, Input.ArcadeButtons.StickDown) && !Input.GetButtonDown(2, Input.ArcadeButtons.StickLeft) && !Input.GetButtonDown(2, Input.ArcadeButtons.StickRight)) {
                                 _votes["Player 2 StickDown"]++;
                         }
-                        if (Input.GetButtonDown(2, Input.ArcadeButtons.StickRight) && !Input.GetButtonDown(1, Input.ArcadeButtons.StickDown) && !Input.GetButtonDown(1, Input.ArcadeButtons.StickUp)) {
+                        if (Input.GetButtonDown(2, Input.ArcadeButtons.StickRight) && !Input.GetButtonDown(2, Input.ArcadeButtons.StickDown) && !Input.GetButtonDown(2, Input.ArcadeButtons.StickUp)) {
                                 _votes["Player 2 StickRight"]++;
                         }
-                        if (Input.GetButtonDown(2, Input.ArcadeButtons.StickLeft) && !Input.GetButtonDown(1, Input.ArcadeButtons.StickDown) && !Input.GetButtonDown(1, Input.ArcadeButtons.StickUp)) {
+                        if (Input.GetButtonDown(2, Input.ArcadeButtons.StickLeft) && !Input.GetButtonDown(2, Input.ArcadeButtons.StickDown) && !Input.GetButtonDown(2, Input.ArcadeButtons.StickUp)) {
                                 _votes["Player 2 StickLeft"]++;
                         }
                         if (Input.GetButtonDown(2, Input.ArcadeButtons.StickUp) && Input.GetButtonDown(2, Input.ArcadeButtons.StickLeft)) {
@@ -486,13 +486,13 @@ namespace EverybodyVotesChannel
 			_spriteBatch.DrawString(_font, _votes["Player 2 Menu"].ToString(), new Vector2(center.X, center.Y - BUTTON_SIZE * 0.5f), Color.White);
 			
                         _spriteBatch.DrawString(_font, _votes["Player 2 StickUp"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 3), center.Y - (int) (BUTTON_SIZE * 4.5)), Color.White);
-                        _spriteBatch.DrawString(_font, _votes["Player 2 StickDown"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 3), center.Y - (int) (BUTTON_SIZE * 2.5)), Color.White);
-                        _spriteBatch.DrawString(_font, _votes["Player 2 StickLeft"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 2.5), center.Y - (int) (BUTTON_SIZE * 3)), Color.White);
+                        _spriteBatch.DrawString(_font, _votes["Player 2 StickDown"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 3), center.Y - (int) (BUTTON_SIZE * 1.5)), Color.White);
+                        _spriteBatch.DrawString(_font, _votes["Player 2 StickLeft"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 1.5), center.Y - (int) (BUTTON_SIZE * 3)), Color.White);
                         _spriteBatch.DrawString(_font, _votes["Player 2 StickRight"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 4.5), center.Y - (int) (BUTTON_SIZE * 3)), Color.White);
-                        _spriteBatch.DrawString(_font, _votes["Player 2 StickUpLeft"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 2.5), center.Y - (int) (BUTTON_SIZE * 4.5)), Color.White);
+                        _spriteBatch.DrawString(_font, _votes["Player 2 StickUpLeft"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 1.5), center.Y - (int) (BUTTON_SIZE * 4.5)), Color.White);
                         _spriteBatch.DrawString(_font, _votes["Player 2 StickUpRight"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 4.5), center.Y - (int) (BUTTON_SIZE * 4.5)), Color.White);
-                        _spriteBatch.DrawString(_font, _votes["Player 2 StickDownLeft"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 2.5), center.Y - (int) (BUTTON_SIZE * 2.5)), Color.White);
-                        _spriteBatch.DrawString(_font, _votes["Player 2 StickDownRight"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 4.5), center.Y - (int) (BUTTON_SIZE * 2.5)), Color.White);
+                        _spriteBatch.DrawString(_font, _votes["Player 2 StickDownLeft"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 1.5), center.Y - (int) (BUTTON_SIZE * 1.5)), Color.White);
+                        _spriteBatch.DrawString(_font, _votes["Player 2 StickDownRight"].ToString(), new Vector2(center.X + (int) (BUTTON_SIZE * 4.5), center.Y - (int) (BUTTON_SIZE * 1.5)), Color.White);
 
 			#region RANDY YOUR STICKS
 
